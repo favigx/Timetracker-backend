@@ -17,7 +17,7 @@ import com.timetracker.timetracker.models.Session;
 import com.timetracker.timetracker.models.Task;
 import com.timetracker.timetracker.services.TaskService;
 
-@CrossOrigin(origins = "https://goldfish-app-5o3ju.ondigitalocean.app/")
+@CrossOrigin(origins = "*")
 @RestController
 public class TaskController {
 

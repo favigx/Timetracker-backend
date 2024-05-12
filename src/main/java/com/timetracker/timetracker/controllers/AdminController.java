@@ -17,7 +17,7 @@ import com.timetracker.timetracker.models.User;
 import com.timetracker.timetracker.services.AdminService;
 import com.timetracker.timetracker.services.UserService;
 
-@CrossOrigin(origins = "https://goldfish-app-5o3ju.ondigitalocean.app/")
+@CrossOrigin(origins = "*")
 @RestController
 public class AdminController {
 
