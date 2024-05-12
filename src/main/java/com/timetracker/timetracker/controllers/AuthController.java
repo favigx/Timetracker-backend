@@ -20,7 +20,7 @@ import com.timetracker.timetracker.services.UserService;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 
-@CrossOrigin(origins = "https://squid-app-ibi5o.ondigitalocean.app")
+@CrossOrigin(origins = "*")
 @RestController
 public class AuthController {
 
