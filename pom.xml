@@ -68,6 +68,10 @@
     <artifactId>spring-session-core</artifactId>
 	 <version>2.5.0</version>
 </dependency>
+<properties>
+    <maven.compiler.release>8</maven.compiler.release>
+</properties>
+
 
 <dependency>
     <groupId>javax.servlet</groupId>
