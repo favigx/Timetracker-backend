@@ -64,6 +64,7 @@ public class AuthController {
         return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Fel användarnamn eller lösenord");
     }
 
+    @CrossOrigin("https://goldfish-app-5o3ju.ondigitalocean.app")
     @PostMapping("/logoutuser/{id}")
     public ResponseEntity<?> logout(@PathVariable String id) {
         User user = userService.getUserById(id);
