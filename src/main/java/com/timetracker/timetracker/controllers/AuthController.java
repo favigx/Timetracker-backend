@@ -20,7 +20,7 @@ import com.timetracker.timetracker.services.UserService;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 
-@CrossOrigin
+@CrossOrigin(origins = "https://squid-app-ibi5o.ondigitalocean.app")
 @RestController
 public class AuthController {
 
@@ -64,7 +64,6 @@ public class AuthController {
         return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Fel användarnamn eller lösenord");
     }
 
-    @CrossOrigin("https://goldfish-app-5o3ju.ondigitalocean.app")
     @PostMapping("/logoutuser/{id}")
     public ResponseEntity<?> logout(@PathVariable String id) {
         User user = userService.getUserById(id);
