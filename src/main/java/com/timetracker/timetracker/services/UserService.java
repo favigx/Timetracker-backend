@@ -46,4 +46,9 @@ public class UserService {
         user.setPassword(encryptedPassword);
         return mongoOperations.insert(user);
     }
+
+    public void deleteUser(String userId) {
+        Query query = Query.query(Criteria.where("id").is(userId));
+        mongoOperations.remove(query, User.class);
+    }
 }
